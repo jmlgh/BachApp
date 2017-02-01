@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Repaso1T</string>
+    <string name="compos_name">Johann Sebastian Bach</string>
+    <string name="lbl_composition">Compositions</string>
+    <string name="tv_name">Composition Name: </string>
+    <string name="tv_range">BMV Range: </string>
+    <string name="tv_years">Composition years: </string>
+    <string name="txt_btn">View all</string>
+
+    <string name="comp_item_typ">Type: </string>
+    <string name="comp_item_ran">Range: </string>
+    <string name="comp_item_year">Years: </string>
+</resources>

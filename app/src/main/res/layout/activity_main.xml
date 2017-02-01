@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.uem.javi.repaso1t.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/compos_name"
+        android:id="@+id/tvBach"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="@string/lbl_composition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBach"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:id="@+id/tvCompos"
+        android:textAlignment="center"
+        android:textStyle="normal|italic"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="@string/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvName"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spCompositions"
+        android:layout_below="@+id/tvCompos"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:text="@string/tv_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNamesResul"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/tvRange"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRange"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvRangeRes"
+        android:textStyle="normal|italic"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNamesResul"
+        android:textAlignment="center"
+        android:textStyle="normal|italic"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_below="@+id/tvName"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/tv_years"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRangeRes"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/tvYears"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvYears"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvYearsRes"
+        android:textStyle="normal|italic"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light" />
+
+    <Button
+        android:text="@string/txt_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button"
+        android:onClick="verTodo" />
+
+</RelativeLayout>
